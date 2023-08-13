@@ -1,0 +1,27 @@
+﻿@using task13._08.Models;
+@model Student
+
+<h1>About Player</h1>
+
+<h1>
+	@Model.Name
+	@Model.Age
+</h1>
+
+@if(Model.Name=="Messi")
+{
+	<h1>1032 games</h1>
+	<h1>814 goals</h1>
+	<h1>339 assists</h1>
+}
+else if (Model.Name == "Ronaldo")
+{
+	<h1>1172 games</h1>
+	<h1>841 goals</h1>
+	<h1>268 assits</h1>
+}
+else{
+	<h1>653 games</h1>
+	<h1>401 goals</h1>
+	<h1>218 assits</h1>
+}

@@ -1,0 +1,12 @@
+﻿@using task13._08.Models;
+@model List<Student>
+
+<h1>Player Information</h1>
+
+
+@foreach (var item in Model)
+{
+	<a href="/home/about/@item.Id">
+		<h1>@item.Id @item.Name @item.Age</h1>
+	</a>
+}
